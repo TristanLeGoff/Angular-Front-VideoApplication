@@ -1,0 +1,84 @@
+<body>
+  <div class="div-100">
+    <div class="div-25-left">
+      
+      <mat-menu #menu="matMenu">
+        <mat-nav-list class="mynavlist">
+          <mat-list-item  *ngFor="let bookmark of bookmarks; let i = index" [class.active]="i == currentIndex">
+            <div>
+              <button mat-menu-item (click)="watchFromBookmark(bookmark)">{{ bookmark.bookmark_link }}</button>
+            </div>
+            <div class="divremove">
+              <button 
+              
+            mat-menu-item
+          class="btn-remove"
+          type="button"
+          (click)="deleteOneBookmark(bookmark)">
+          <mat-icon>clear</mat-icon>
+        </button>
+            </div>
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-nav-list>
+      </mat-menu>
+      
+      <div class="div80">
+        <h2 class="titleh2">History List</h2>
+        <button class="btnremoveall" mat-button (click)="removeAllHistory()">
+          Remove All History
+        </button>
+        <div class="div70">
+          <button mat-button class="btnbookmark" [matMenuTriggerFor]="menu" >
+            <p id="numberbookmark" class="vfee"></p>
+            <mat-icon>favorite</mat-icon>
+          </button>
+        </div>
+        <mat-list-item  *ngFor="let history of historys; let i = index" [class.active]="i == currentIndex">
+          <div class="divwatch2">
+            <button mat-menu-item (click)="watchFromHistory(history)">{{ history.video_link }}</button>
+            <mat-divider></mat-divider>
+          </div>
+          
+          <div class="divremove2">
+            
+            <button 
+            mat-menu-item
+            class="btn-remove2"
+            type="button"
+            (click)="deleteOneHistory(history)">
+              <mat-icon>delete</mat-icon>
+            </button>
+            
+          </div>
+          
+        </mat-list-item>
+      </div>
+    </div>
+    <div class="div-60-center">
+      <form class="example-form">
+        <mat-form-field appearance="outline" class="mybar" style="margin-top: -1.25em">
+          <input matInput placeholder="Youtube link" class="myinput" style="height:20px" id="video_link" name="video_link">
+          
+        </mat-form-field>
+        <button mat-button class="mybutton" color="accent" (click)="watchVideo()">
+          <mat-icon class="myicon">play_arrow</mat-icon>
+          Watch
+      </button>
+      </form>
+      
+      <div class="video-container">
+        <iframe id="myvideo" width="560" height="315"  src="" frameborder="0" style="background: black;" allowfullscreen></iframe>
+      </div>
+      <button mat-button class="mybuttonbookmark" color="accent" (click)="saveBookmark()" >
+        <mat-icon class="myicon" >favorite</mat-icon>
+        Add the video to bookmarks
+    </button>
+      <p id="texterror" class="myerror" ></p>
+    </div>
+
+    
+
+
+  </div>
+<body>

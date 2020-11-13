@@ -1,0 +1,174 @@
+/* Border */
+
+  /* Font color */
+input.mat-input-element {
+    font-size: 15px;
+    margin-top: 20px;
+    
+}
+
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline {
+    color: rgb(158, 158, 158);
+    height: 30px;
+    margin-top: 36px;
+    
+}
+
+::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: rgb(250, 37, 101);
+}
+
+::ng-deep .mat-form-field-wrapper{
+    margin-bottom: -1.25em;
+ }
+
+.mybar {
+    width: 80% ;
+}
+
+.mybutton {
+    width: auto ;
+    border: 1px solid rgb(158, 158, 158) !important;
+    height: 30px;
+    margin-top: 0px;
+    text-align: center;
+    padding-left:10px;
+    background-color: rgb(243, 242, 242);
+}
+
+.myicon {
+    height: 32px;
+}
+
+.div-60-center {
+    width: 60%;
+    margin: 0 auto;
+    float:left;
+    min-width: 480px;
+}
+
+.div-100 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.div-25-left {
+    margin-top: 20px;
+    width: 32%;
+    float:left;
+    min-width: 350px;
+}
+
+.div-25-right {
+    margin-top: 100px;
+    width: 25%;
+    float:left;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.myerror {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: red;
+}
+
+.mybuttonbookmark {
+    width: 100%;
+    border: 1px solid rgba(255, 0, 0, 0.37) !important;
+    height: 30px;
+    margin-top: 5px;
+    text-align: center;
+    padding-left:10px;
+    background-color: rgba(250, 37, 101, 0.5);
+    color: black;
+}
+
+::ng-deep.mat-menu-panel {
+    max-width: none !important;
+  }
+
+.btn-remove {
+    background-color:rgba(255, 55, 55, 0.356);
+    float:right;
+    width: 50px;
+    padding-left: 13px;
+    padding-right: 0px;
+
+}
+.divremove {
+    float:right;
+    width: 100%;
+}
+.div80 {
+    width: 90%;
+    margin-left: 20px;
+    
+}
+.divremove2 {
+    float:left;
+    width: 20%;
+    
+}
+.btn-remove2 {
+    background-color:  rgba(255, 55, 55, 0.356);
+    float:left;
+    width: 50px;
+    padding-left: 13px;
+    padding-right: 0px;
+    
+}
+.divwatch2 {
+    float:left;
+    width: 70%;
+    border: 1px solid rgba(255, 0, 0, 0.37) !important;
+    
+
+}
+.titleh2{
+    float:left;
+    width: 35%;
+}
+.btnremoveall {
+    float: left;
+    width: auto;
+    height: auto;
+    border: 1px solid rgba(255, 0, 0, 0.37) !important;
+    background-color: rgba(255, 55, 55, 0.356);
+}
+.btnbookmark {
+    width: 100%;
+    background-color: rgb(250, 37, 101);
+    float: right;
+}
+.div70{
+    width: 10%;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    float: left;
+    margin-left: 10px;
+}
+.mynavlist{
+    background-color: rgba(255, 55, 55, 0.356);
+}
+.myback {
+    background-color:blue;
+}
+/* On travaille sur la balise body, donc sur TOUTE la page */
+body
+{
+    /*background-color: rgba(131, 85, 85, 0.041); */
+    background-color: rgb(253, 228, 228);
+}
